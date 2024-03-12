@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
         </Link>
         
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <SSOButton provider="Google"  />
+          <SSOButton provider="Google"  />
           <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24">
@@ -30,15 +30,15 @@ const Navbar: React.FC = () => {
         <div className={`items-center justify-between ${isOpen ? 'flex' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
           <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:p-0 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white rtl:space-x-reverse">
             
-            <li>
-              <Link href="#about"><div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</div></Link>
+            {/* <li>
+              <Link href="#aboutus"><div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About Us</div></Link>
             </li>
             <li>
-              <Link href="#services"><div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Services</div></Link>
+              <Link href="#course-category"><div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Course categories</div></Link>
             </li>
             <li>
-              <Link href="#contact"><div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</div></Link>
-            </li>
+              <Link href="#students-spotlight"><div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Spotlight</div></Link>
+            </li> */}
           </ul>
         </div>
       </div>
