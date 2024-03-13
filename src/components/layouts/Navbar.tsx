@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         
         <Link href="/">
           <div className="flex items-center space-x-3 rtl:space-x-reverse" style={{ cursor: 'pointer' }}>
-            <Image src='/solidLearn.svg' width={100} height={100} alt="Logo" className="h-8"/>
+            <Image src='/solidlearn.svg' width={100} height={100} alt="Logo" className="h-8"/>
           </div>
         </Link>
         
