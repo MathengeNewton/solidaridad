@@ -5,9 +5,26 @@ const nextConfig = {
     webpack: (config) => {
         config.resolve.alias['@/media'] = path.join(__dirname, 'src/public');
         return config;
-      },
+    },
     images: {
-        domains: ['dynamic.brandcrowd.com', 'res.cloudinary.com', 'tailwindui.com'],
+        remotePatterns: [
+                {
+                protocol: 'https',
+                hostname: 'dynamic.brandcrowd.com'
+                },
+                {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+                },
+                {
+                protocol: 'https',
+                hostname: 'flowbite.s3.amazonaws.com'
+                },
+                {
+                protocol: 'https',
+                hostname: 'lh3.googleusercontent.com',
+                }
+            ]
     }
 }
 
