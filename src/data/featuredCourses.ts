@@ -1,7 +1,7 @@
 
 const featuredCourses = [
     {
-        title: "Cybre Security",
+        title: "Cyber Security",
         description: "Dive into cybersecurity with topics on ethical hacking, network defense, and digital forensics to safeguard digital assets.",
         image: `https://res.cloudinary.com/newtonmathenge/image/upload/v1710259636/cybreSecurity_t2plgu.webp` 
     },

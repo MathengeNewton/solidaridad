@@ -25,7 +25,8 @@
       "@components/*": ["src/components/*"],
       "@media/*": ["public/*"],
       "@styles/*": ["src/styles/*"],
-      "@data/*": ["src/data/*"]
+      "@data/*": ["src/data/*"],
+      "@hooks/*": ["src/hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/contacts/page.jsx", "src/app/pages/page.jsx"],

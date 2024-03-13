@@ -16,9 +16,13 @@ const HeroSection = () => {
             Dive into a world where learning knows no bounds, and knowledge sharing becomes a part of your daily journey.
           </p>
           
-          {/* <Link href="" passHref>
-            <SSOButton provider="Google" />
-          </Link> */}
+          <Link href="#" passHref>
+            <button  
+                  className="text-white bg-[#FFCC00] border border-1-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+              >
+                  Explore our material
+              </button>
+          </Link>
 
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
