@@ -16,12 +16,13 @@ const HeroSection = () => {
             Dive into a world where learning knows no bounds, and knowledge sharing becomes a part of your daily journey.
           </p>
           
-          <Link href="/contact-sales" passHref>
+          {/* <Link href="" passHref>
             <SSOButton provider="Google" />
-          </Link>
+          </Link> */}
+
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <Image src="/banner1.jpg" alt="mockup" width={500} height={500} />
+          <Image src="/banner.png" alt="mockup" width={500} height={500} />
         </div>
       </div>
     </section>

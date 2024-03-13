@@ -15,14 +15,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <meta name="description" content="Learning Management & Knowledge sharing system" />
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>        
+        <Navbar />
         <div className="flex flex-col min-h-screen bg-white">
-          <Navbar />
           <main className="flex-1 pt-16">
             {children}
-          </main>
-          <Footer />
+          </main>          
         </div>
+        <Footer />
 
     </>
   );

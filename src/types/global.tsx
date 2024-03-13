@@ -1,4 +1,6 @@
 import React from 'react';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+
 
 export interface SSOButtonProps {
   provider: string;
@@ -7,7 +9,7 @@ export interface SSOButtonProps {
 export interface FeatureProps {
   title: string;
   description: string;
-  icon: React.ElementType;
+  icon: IconDefinition;
 }
 
 export interface StudentSpotlightProps {

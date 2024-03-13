@@ -1,6 +1,7 @@
 import React from 'react';
 import { signIn, useSession } from 'next-auth/react';
 import { SSOButtonProps } from "@/types/global";
+import Image from 'next/image';
 
 const SSOButton: React.FC<SSOButtonProps> = ({ provider }) => {
   const { data: session } = useSession();
@@ -23,13 +24,15 @@ const SSOButton: React.FC<SSOButtonProps> = ({ provider }) => {
     return (
       <div className="flex items-center space-x-2">
         {userImage && (
-          <img
+          <Image
             src={userImage}
             alt="User Image"
-            className="w-8 h-8 rounded-full"
+            className="w-8 h-8 rounded-full"             
+            width={500} 
+            height={375}
           />
         )}
-        <span>Welcome, {userName}!</span>
+        <span className="text-sm text-[#FFCC00]">Welcome, {userName}!</span>
       </div>
     );
   }

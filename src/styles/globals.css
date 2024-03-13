@@ -26,6 +26,26 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+@media (max-width: 768px) {
+  .courseContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .responsiveImage {
+    max-width: 90%; 
+    margin: 0 auto; 
+  }
+
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
