@@ -7,10 +7,10 @@ import { FeaturedCoursesProps } from "@/types/global";
 
 const FeaturedCourses: React.FC = () => {
     return (
-        <section className="">
+        <section className="" id="featured-courses">
             <div className="text-center py-4">
                 <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-800">Featured Courses</h1>
-                <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Discover our handpicked selection of courses designed to boost your skills.</p>
+                <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">Discover our handpicked selection of courses designed to boost your skills.</p>
             </div>
             <div className="max-w-screen-xl px-4 py-8 mx-auto">
                 {featuredCourses.map((course: FeaturedCoursesProps, index: number) => {
@@ -24,7 +24,7 @@ const FeaturedCourses: React.FC = () => {
                                 <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-gray-700">
                                     {course.title}
                                 </h1>
-                                <p className="mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                                <p className="mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
                                     {course.description}
                                 </p>
                                 <Link href="#" passHref>
